@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: peru;
+    border-bottom: 1px solid peru;
+
+}
+.btn {
+    background: #00ead3;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 10px;
+}
+.btn:hover{
+           background: hsla(174, 89%, 21%, 0.993);
+
+}
+.btn.btn-todo-mal{
+
+    background: red;
+}
+.btn.btn-todo-mal.btn:hover{
+    background: rosybrown;
+}

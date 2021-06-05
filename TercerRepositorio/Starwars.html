@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <title></title>
+</head>
+<body>
+<div class="wrapper">
+ 
+       <header class="top">
+
+       <h1><a href="#">May The 4th Be With You</a></h1>    
+       
+    </header>
+    <nav class="navegacion">
+ 
+         <a href="#" class="toggle">Menu</a>   
+    
+
+    <ul>
+        <li><a href="">VADER</a></li>
+        <li><a href="">CHEWIE</a></li>
+        <li><a href="">YODA</a></li>
+        <li><a href="">RAY</a></li>
+        <li class="social"><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li class="social"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li class="social"><a href=""><i class="fab fa-github"></i></a></li>
+      </ul>
+    </nav>
+    <div class="items">
+    <div class="item">
+        <img src="https://fondosmil.com/fondo/32405.jpg">
+    </div>
+    <div class="item">
+        <img src="chewie.jpg">
+       </div>
+    <div class="item">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/baby-yoda-real-1580463409.jpg">
+       </div>
+    <div class="item">
+        <img src="https://i.pinimg.com/originals/ef/ec/fc/efecfc9c405eb26e83912b892ca4b3f3.jpg">
+       </div>
+     </div>
+   
+   <section class="details">
+      <p>May the force be with you!!</p>
+       <p>My young padawan!!</p>
+       <p>Luke yo soy tu padre</p>
+
+    </section>
+    <section class="signup">
+      <form>
+         <input type="text" placeholder="TU NOMBRE">
+         <input type="text" placeholder="TU MAIL">
+         <input type="submit" value="Suscribirme">
+
+      </form>
+
+
+    </section>
+    <footer> 
+       
+        <p>&copy;GUDIÑO</p>
+    </footer>
+</div> 
+<script>
+     const toggle = document.querySelector(' .toggle');
+     console.log(toggle)
+     const navUl = document.querySelector('nav.navegacion ul');
+     console.log(navUl);
+     
+     toggle.addEventListener('click', () =>  {
+       navUl.classList.toggle('open');
+     });
+      
+
+
+
+
+
+
+
+
+</script>  
+</body>
+</html>

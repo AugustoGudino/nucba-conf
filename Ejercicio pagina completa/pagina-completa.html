@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Website</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>BOLICHE</h1>
+                <p>El mejor boliche</p>
+                <p>Donde esta la mejor fiesta</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>ENTRADA</p>
+                <p class="price">$500</p>
+                <p>VIP+FOTO CON AUGUSTO</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>ENTRADA</p>
+                <p class="price">$200</p>
+                <p>HASTA EL FONDO EN BEBIDAS</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">&#9776;</span>
+                <span class="close">&#9747;</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Speakers</a>
+                </li>
+                <li>
+                    <a href="">Precios</a>
+                </li>
+                <li>
+                    <a href="">Descuentos</a>
+                </li>
+                <li>
+                    <a href="">VIP</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🍔 </span>
+                <h3>Comida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem aut perspiciatis distinctio sapiente doloremque nostrum, voluptas itaque nam ullam eaque aliquid, repellendus laudantium cum similique non ea corrupti placeat modi.
+
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍺 </span>
+                <h3>Cerveza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum consectetur saepe alias, nisi vitae dignissimos facilis quas laudantium cupiditate laborum architecto vero iure impedit aspernatur expedita quia at tenetur.
+
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon">💃 </span>
+                <h3>A BAILAR</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloremque sed maxime, voluptates sapiente itaque fugiat, aliquid magni adipisci corrupti quidem nisi voluptatem aut recusandae et deserunt exercitationem tempora quis!
+
+                </P>
+            </div>
+            <div class="feature">
+                <span class="icon">🎹 </span>
+                <h3>MUSIC ALL NIGHT </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi dolor quo laudantium. Fuga eos hic facilis quo dolores maiores tempora minus! Sit molestiae dolores architecto repellat quidem velit autem.
+
+                </p>
+            </div>
+        </section>
+        <section class="about">
+            <video src="" autoplay loop></video>
+            <div class="about__details">
+                <h2>LOS ESPERAMOS</h2>
+                <p>This is the one you have been waiting for</p>
+                <p>ARE YOU READY???</p>
+                <button>Info pls &#10142; </button>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Instant Grams</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt=""/>
+            <img src="https://source.unsplash.com/random/201x202" alt=""/>
+            <img src="https://source.unsplash.com/random/201x203" alt=""/>
+            <img src="https://source.unsplash.com/random/201x204" alt=""/>
+            <img src="https://source.unsplash.com/random/201x205" alt=""/>
+            <img src="https://source.unsplash.com/random/201x206" alt=""/>
+            <img src="https://source.unsplash.com/random/201x207" alt=""/>
+            <img src="https://source.unsplash.com/random/201x208" alt=""/>
+            <img src="https://source.unsplash.com/random/201x209" alt=""/>
+            <img src="https://source.unsplash.com/random/201x210"alt=""/>
+        </section>
+    </div>
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({ target }) {
+            const expandir =
+             target.getAttribute('aria-expanded') === 'true'|| false;
+            navButton.setAttribute('aria-expanded', !expandir);
+           
+        }
+        navButton.addEventListener('click',toggleNav);
+        
+    </script>
+    
+</body>
+</html>
