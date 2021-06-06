@@ -37,7 +37,7 @@ img {
 .principal {
     grid-area: principal;
     min-height: 400px;
-    background: white url(../TercerRepositorio/party-51.jpg);
+    background: white url(./party-51.jpg);
     background-size: cover;
     background-position: center ;
     padding: 50px;
